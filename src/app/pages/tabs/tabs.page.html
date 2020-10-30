@@ -1,3 +1,5 @@
+<ion-menu side="end" type="push" contentId="main"></ion-menu>
+
 <ion-header>
   <ion-toolbar>
     <ion-buttons slot="start">
@@ -8,37 +10,14 @@
 </ion-header>
 
 <ion-content>
+<ion-progress-bar type="indeterminate" reversed="true"></ion-progress-bar>
 
+<ion-item>
+  <ion-label>SELECCIONA FECHA</ion-label>
+  <ion-datetime displayFormat="" placeholder=""></ion-datetime>
+</ion-item>
 
-  <ion-item>
-    <ion-label>AÑO</ion-label>
-    <ion-datetime [pickerOptions]="customPickerOptions"  displayFormat="YYYY" min="1981" max="2002"></ion-datetime>
-  </ion-item>
-  
-  <ion-item>
-    <ion-label position="stacked">MES Y AÑO</ion-label>
-    <ion-datetime displayFormat="MMMM YY" min="1989-06-04" max="2022-08-23" value="2020-07-15T13:47:20.789"></ion-datetime>
-  </ion-item>
-
-  <ion-list>
-    <ion-radio-group value="biff">
- 
-      <ion-item>
-        <ion-radio slot="start" value="biff"></ion-radio>
-        <ion-label>ESPAÑA</ion-label>
-      </ion-item>
-  
-      <ion-item>
-        <ion-radio slot="start" value="griff"></ion-radio>
-        <ion-label>LONDRES</ion-label>
-      </ion-item>
-  
-      <ion-item>
-        <ion-radio slot="start" value="buford"></ion-radio>
-        <ion-label>NUEVA YORK</ion-label>
-      </ion-item>
-    </ion-radio-group>
-  </ion-list>
+<img src="https://as01.epimg.net/tikitakas/imagenes/2019/10/26/portada/1572101446_631841_1572169681_noticia_normal_recorte1.jpg" alt="">
 
 
   <ion-tabs>

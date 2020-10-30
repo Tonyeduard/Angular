@@ -9,36 +9,12 @@
 
 <ion-content>
   <ion-list>
-    <ion-item>
-      <ion-checkbox color="primary"></ion-checkbox>
-      <ion-label>---- > Sistemas Informaticos  // <ion-icon name="laptop-outline" size = "small"></ion-icon></ion-label>
-      
-    </ion-item>
-    <ion-item>
-      <ion-checkbox color="secondary"></ion-checkbox>
-      <ion-label> ---- > Lenguajes de Marcas // <ion-icon name="receipt-outline"></ion-icon></ion-label>
-      
-    </ion-item>
-    <ion-item>
-      <ion-checkbox color="danger"></ion-checkbox>
-      <ion-label> ---- > Entornos de Desarrollo // <ion-icon name="settings-outline"></ion-icon></ion-label>
-
-    </ion-item>
-    <ion-item>
-      <ion-checkbox color="light"></ion-checkbox>
-      <ion-label> ---- > Programacion // <ion-icon name="code-slash-outline"></ion-icon> </ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-checkbox color="dark"></ion-checkbox>
-      <ion-label> ---- > Bases de datos // <ion-icon name="download-outline"></ion-icon></ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-checkbox color="secondary"></ion-checkbox>
-      <ion-label> ---- > Inglés // <ion-icon name="earth-outline"></ion-icon></ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-checkbox color="light"></ion-checkbox>
-      <ion-label> ---- > Formación y Orientación Laboral // <ion-icon name="storefront-outline"></ion-icon></ion-label>
+    <ion-item *ngFor="let elemento of elementos">
+      <ion-avatar slot= "start">
+        <img src={{elemento.img}}>
+      </ion-avatar>      
+      <ion-label>{{elemento.asignatura}}</ion-label>
+      <ion-checkbox slot="end" ></ion-checkbox>
     </ion-item>
   </ion-list>
 </ion-content>
